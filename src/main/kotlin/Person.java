@@ -1,13 +1,11 @@
 public class Person {
-    int age;
     String name;
 
-    public Person(int age, String name) {
-        this.age = age;
+    public Person(String name) {
         this.name = name;
     }
 
-    public void sayHello() {
-        System.out.println("Hi");
+    public void greet() {
+        System.out.println("Hello, my name is " + name);
     }
 }

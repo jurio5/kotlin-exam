@@ -1,10 +1,12 @@
 package com.ll
 
-fun main() {
-    val result = add(5, 10)
-    println("result = $result")
+class Person(val name: String, val age: Int) {
+    fun greet() {
+        println("Hello, my name is $name,\nMy Age is $age")
+    }
 }
 
-fun add(a: Int, b: Int): Int {
-    return a + b
+fun main() {
+    val person = Person("Alice", 22)
+    person.greet()
 }
