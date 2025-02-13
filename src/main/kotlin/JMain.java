@@ -1,15 +1,17 @@
-import java.util.ArrayList;
-import java.util.List;
+import java.util.HashMap;
+import java.util.Map;
 
 public class JMain {
-    public static void main(String[] args) {
-        List<String> name = new ArrayList<>();
+    public class Main {
+        public static void main(String[] args) {
+            Map<String, Integer> ages = new HashMap<>();
+            ages.put("Alice", 25);
+            ages.put("Bob", 30);
+            ages.put("Charlie", 35);
 
-        name.add("Alice");
-        name.add("Bob");
-
-        for (String names : name) {
-            System.out.println(names);
+            for (Map.Entry<String, Integer> entry : ages.entrySet()) {
+                System.out.println(entry.getKey() + " is " + entry.getValue() + " years old.");
+            }
         }
     }
 }

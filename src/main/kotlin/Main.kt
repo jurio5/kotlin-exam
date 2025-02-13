@@ -2,9 +2,9 @@ package com.ll
 
 
 fun main() {
-    val names = listOf("Alice", "Bob") // 불변 리스트
+    val ages = mapOf("Alice" to 25, "Bob" to 30, "Charlie" to 35) // 불변 맵
 
-    for (name in names) {
-        println(name)
+    for ((name, age) in ages) {
+        println("$name is $age years old.")
     }
 }
