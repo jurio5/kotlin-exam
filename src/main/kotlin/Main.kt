@@ -1,7 +1,7 @@
 package com.ll
 
 fun main() {
-    val number = if ( true ) 10 else 20
-
-    println(number)
+    for (i in 0 until 5) {
+        println("Count =$i")
+    }
 }

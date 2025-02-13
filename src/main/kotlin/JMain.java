@@ -1,10 +1,8 @@
 public class JMain {
 
     public static void main(String[] args) {
-        final int number = 10;
-
-        int result = (number % 2 == 0) ? 10 : 20;
-
-        System.out.println(result);
+        for (int i = 0; i < 5; i++) {
+            System.out.println(i);
+        }
     }
 }
