@@ -1,5 +1,9 @@
 package com.ll
 
 fun main() {
-    println("Hello World!")
+    val number = 10
+    var message = "Hello, Kotlin"
+
+    println("number = $number")
+    println("message = $message")
 }
