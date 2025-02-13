@@ -1,9 +1,7 @@
 package com.ll
 
 fun main() {
-    val number = 10
-    var message = "Hello, Kotlin"
+    val number = if ( true ) 10 else 20
 
-    println("number = $number")
-    println("message = $message")
+    println(number)
 }
